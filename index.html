@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SoftSell helps businesses recover value from inactive or surplus software licenses with our secure, efficient resale platform." />
+    <meta name="keywords" content="software resale, license resale, software license, license valuation, software marketplace" />
+    <meta name="author" content="SoftSell" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="SoftSell - Turn Unused Software Licenses Into Cash" />
+    <meta property="og:description" content="Recover up to 70% value from your unused software licenses. Fast, secure, and compliant." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://softsell.example.com" />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SoftSell - Software License Resale Platform" />
+    <meta name="twitter:description" content="Recover up to 70% value from your unused software licenses. Fast, secure, and compliant." />
+    <meta name="twitter:image" content="/twitter-image.png" />
+    
+    <title>SoftSell - Turn Unused Software Licenses Into Cash</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preconnect to font provider -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Minimal inline script to check system color preference -->
+    <script>
+      // Check for saved theme preference or use the system preference
+      const savedTheme = localStorage.getItem('darkMode');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'true' || (savedTheme === null && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </body>
+</html>
